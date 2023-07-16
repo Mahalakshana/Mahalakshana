@@ -1,1 +1,18 @@
+<?php
+$school=array("group 1"=>"maths","group 2"=>"science","group 3"=>"commerce",
+"group 4"=>"computer");
+$group = array_keys($school);
 
+$y="my group is ";
+for($x=0;$x < sizeof($group);$x++){
+    	$groups=$group[$x];
+        $faculty = $school[$groups];
+   if($faculty ==="maths"){
+   		$y.=$faculty." and ";
+   }
+   if($faculty ==="commerce"){
+   		$y.=$faculty;
+   }
+}
+echo $y;
+?>
